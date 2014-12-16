@@ -1,0 +1,68 @@
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{fix-cm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{mdwlist}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{datetime}
+\usepackage[perpage,para,bottom,marginal]{footmisc}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{multicol}
+\newdateformat{dmny}{\monthname[\THEMONTH] \THEYEAR}
+\newdateformat{dyo}{\THEYEAR}
+\setlength{\headheight}{30pt}
+\pagestyle{fancy}
+
+\title{\doctitle}
+\author{Nicolas Hafner}
+\date{\d_mny\today}
+
+\lhead{Nicolas Hafner}
+\chead{\doctitle}
+\lfoot{\copyright \dyo\today\; Shirakumo}
+\cfoot{\thepage\ / \pageref{LastPage}}
+\rhead{Zürich, \dmny\today}
+
+\newcommand{\longsquiggly}{\xymatrix{{}\ar@{~>}[r]&{}}}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+\renewcommand{\arg}{\operatorname{arg}}
+\renewcommand{\d}{\partial}
+\newcommand{\arsinh}{\operatorname{arsinh}}
+\newcommand{\arcosh}{\operatorname{arcosh}}
+\newcommand{\artanh}{\operatorname{artanh}}
+\newcommand{\setC}{\mathbb{C}}
+\newcommand{\setR}{\mathbb{R}}
+\newcommand{\setZ}{\mathbb{Z}}
+\newcommand{\setN}{\mathbb{Z}^{\geq0}}
+\newcommand{\Graph}{\operatorname{Graph}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\rot}{\operatorname{rot}}
+\newcommand{\divv}{\operatorname{div}}
+\newcommand{\twovec}[2]{\mathop{\left(\substack{#1 \\ #2}\right)}}
+\newcommand{\threevec}[3]{\mathop{\left(\substack{#1 \\ #2 \\ #3}\right)}}
+
+\begin{document}
+\begin{center}{\bfseries\Huge\doctitle}\end{center}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
