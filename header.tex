@@ -43,25 +43,26 @@
 \cfoot{\thepage\ / \pageref{LastPage}}
 \rhead{\dmny\today}
 
+\newcommand{\twovec}[2]{\mathop{\left(\substack{#1 \\ #2}\right)}}
+\newcommand{\threevec}[3]{\mathop{\left(\substack{#1 \\ #2 \\ #3}\right)}}
 \newcommand{\longsquiggly}{\xymatrix{{}\ar@{~>}[r]&{}}}
 \renewcommand{\Re}{\operatorname{Re}}
 \renewcommand{\Im}{\operatorname{Im}}
 \renewcommand{\arg}{\operatorname{arg}}
 \renewcommand{\d}{\partial}
-\newcommand{\arsinh}{\operatorname{arsinh}}
-\newcommand{\arcosh}{\operatorname{arcosh}}
-\newcommand{\artanh}{\operatorname{artanh}}
-\newcommand{\setC}{\mathbb{C}}
-\newcommand{\setR}{\mathbb{R}}
-\newcommand{\setZ}{\mathbb{Z}}
-\newcommand{\setN}{\mathbb{Z}^{\geq0}}
-\newcommand{\Graph}{\operatorname{Graph}}
-\newcommand{\vol}{\operatorname{vol}}
-\newcommand{\diam}{\operatorname{diam}}
-\newcommand{\rot}{\operatorname{rot}}
-\newcommand{\divv}{\operatorname{div}}
-\newcommand{\twovec}[2]{\mathop{\left(\substack{#1 \\ #2}\right)}}
-\newcommand{\threevec}[3]{\mathop{\left(\substack{#1 \\ #2 \\ #3}\right)}}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\arsinh}{arsinh}
+\DeclareMathOperator{\arcosh}{arcosh}
+\DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\setC}{\mathbb{C}}
+\DeclareMathOperator{\setR}{\mathbb{R}}
+\DeclareMathOperator{\setZ}{\mathbb{Z}}
+\DeclareMathOperator{\setN}{\mathbb{N}}
+\DeclareMathOperator{\Graph}{Graph}
+\DeclareMathOperator{\vol}{vol}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\divv}{div}
 
 \begin{document}
 \begin{center}{\bfseries\Huge\doctitle}\end{center}
