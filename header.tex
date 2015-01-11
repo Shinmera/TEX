@@ -28,6 +28,7 @@
 \usepackage{caption}
 \usepackage{enumitem}
 \usepackage{multicol}
+\usepackage{pgf,pgffor}
 \newdateformat{dmny}{\monthname[\THEMONTH] \THEYEAR}
 \newdateformat{dyo}{\THEYEAR}
 \setlength{\headheight}{30pt}
@@ -46,18 +47,29 @@
 \newcommand{\twovec}[2]{\mathop{\left(\substack{#1 \\ #2}\right)}}
 \newcommand{\threevec}[3]{\mathop{\left(\substack{#1 \\ #2 \\ #3}\right)}}
 \newcommand{\longsquiggly}{\xymatrix{{}\ar@{~>}[r]&{}}}
+\newcommand*{\algebra}[2][S]{%
+  \langle #1;%
+  \foreach \entry [count=\ni] in {#2} {%
+    \ifnum\ni=1%
+       \entry%
+    \else%
+       ,\entry%
+    \fi
+  } \rangle%
+}
 \renewcommand{\Re}{\operatorname{Re}}
 \renewcommand{\Im}{\operatorname{Im}}
 \renewcommand{\arg}{\operatorname{arg}}
 \renewcommand{\d}{\partial}
+\newcommand{\setC}{\mathbb{C}}
+\newcommand{\setR}{\mathbb{R}}
+\newcommand{\SetQ}{\mathbb{Q}}
+\newcommand{\setZ}{\mathbb{Z}}
+\newcommand{\setN}{\mathbb{N}}
 \DeclareMathOperator{\lcm}{lcm}
 \DeclareMathOperator{\arsinh}{arsinh}
 \DeclareMathOperator{\arcosh}{arcosh}
 \DeclareMathOperator{\artanh}{artanh}
-\DeclareMathOperator{\setC}{\mathbb{C}}
-\DeclareMathOperator{\setR}{\mathbb{R}}
-\DeclareMathOperator{\setZ}{\mathbb{Z}}
-\DeclareMathOperator{\setN}{\mathbb{N}}
 \DeclareMathOperator{\Graph}{Graph}
 \DeclareMathOperator{\vol}{vol}
 \DeclareMathOperator{\diam}{diam}
